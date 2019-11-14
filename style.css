@@ -1,0 +1,76 @@
+.textareaResult {
+    display: block;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+.keyboard {
+    width: 704px;
+    margin: 0 auto;
+}
+
+.row{
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #3a424e;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.backspace {
+    width: 100px;
+}
+.space{
+    width: 330px;
+}
+
+.shift{
+    width: 100px;
+}
+.shiftRight{
+    width: 86px;
+}
+.capslock{
+    width: 100px;
+}
+.enter{
+    width: 86px;
+}
+.tab{
+    width: 50px;
+}
+.del{
+    width: 44px;
+}
+
+.down{
+    background-color: aqua;
+
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    
+}
+.off{
+    display: none;
+}
