@@ -13,7 +13,8 @@ function createKeyboard() {
 
     let keyboardDiv = document.createElement('div');
     keyboardDiv.className = 'keyboard' ; 
-
+    
+    let keys_count = [14,15,13,13,9]
     let rows_count = 5
     let rows = []
 
@@ -22,7 +23,7 @@ function createKeyboard() {
         rows[i].classList.add('row')
     }
 
-    for (let i = 0; i < 14; i++){
+    for (let i = 0; i < keys_count[0]; i++){
 
         let key = document.createElement('div')
         key.classList.add('key')
@@ -30,7 +31,7 @@ function createKeyboard() {
     }
     rows[0].lastChild.classList.add('backspace')
 
-    for (let i = 0; i < 15; i++){
+    for (let i = 0; i < keys_count[1]; i++){
 
         let key = document.createElement('div')
         key.classList.add('key')
@@ -39,7 +40,7 @@ function createKeyboard() {
     rows[1].lastChild.classList.add('del')
     rows[1].firstChild.classList.add('tab')
 
-    for (let i = 0; i < 13; i++){
+    for (let i = 0; i < keys_count[2]; i++){
 
         let key = document.createElement('div')
         key.classList.add('key')
@@ -48,7 +49,7 @@ function createKeyboard() {
     rows[2].firstChild.classList.add('capslock')
     rows[2].lastChild.classList.add('enter')
 
-    for (let i = 0; i < 13; i++){
+    for (let i = 0; i < keys_count[3]; i++){
 
         let key = document.createElement('div')
         key.classList.add('key')
@@ -56,7 +57,7 @@ function createKeyboard() {
     }
     rows[3].lastChild.classList.add('shiftRight')
     rows[3].firstChild.classList.add('shift')
-    for (let i = 0; i < 9; i++){
+    for (let i = 0; i < keys_count[4]; i++){
 
         let key = document.createElement('div')
         key.classList.add('key')
